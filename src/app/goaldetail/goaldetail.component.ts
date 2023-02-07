@@ -6,6 +6,7 @@ import { Goal } from '../goal';
   templateUrl: './goaldetail.component.html',
   styleUrls: ['./goaldetail.component.css']
 })
+
 export class GoaldetailComponent implements OnInit {
   @Input() goal!: Goal; 
   constructor() {}

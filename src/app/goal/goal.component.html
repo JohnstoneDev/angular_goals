@@ -1,10 +1,10 @@
-<div>
     <h1>My Goals</h1>
     <hr>
-    <ul>
-      <li *ngFor='let goal of goals'>
-        {{goal.name}}
-        <app-goaldetail [goal] = 'goal'></app-goaldetail>
-      </li>
+    <ul class="goals">
+      <div *ngFor='let goal of goals ; let i = index' class="goal">
+        <li>{{goal.name}}</li>
+        <app-goaldetail *ngIf="goal.showDescription"  [goal] = 'goal'></app-goaldetail>
+        <button (click)="toggleDetails(i)">Toggle Details </button>
+      </div>
     </ul>
-  </div>
+<p *ngIf="goals.length > 5"> You have too many details </p>
