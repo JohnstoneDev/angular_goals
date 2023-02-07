@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto+Mono:wght@500&display=swap');
+
+* {
+    margin : 0; 
+    padding : 0; 
+    background-color: rgb(210, 245, 233);
+    color : rgb(37,37,37);
+    font-family: 'Roboto Mono', monospace;
+    box-sizing: border-box;
+    font-size: larger;
+    text-align: center;
+}
