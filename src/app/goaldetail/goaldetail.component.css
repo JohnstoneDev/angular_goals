@@ -1,3 +1,20 @@
 * {
     font-size: 20px;
 }
+
+.detail {
+    display: grid;
+    padding: 0.5em;
+    gap: 1em;
+}
+
+.detail > button {
+    background-color: red;
+    color: aliceblue;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+.detail > button:hover {
+   background-color: blue;
+}
