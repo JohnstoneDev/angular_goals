@@ -1,7 +1,7 @@
     <h1>My Goals</h1>
     <hr>
     <ul class="goals">
-      <div *ngFor='let goal of goals ; let i = index' class="goal">
+      <div *ngFor='let goal of goals ; let i = index' appStrikethrough class="goal">
         <li>{{goal.name}}</li>
         <app-goaldetail 
           *ngIf="goal.showDescription" 

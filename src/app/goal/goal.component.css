@@ -8,7 +8,6 @@
 }
 
 .goal { 
-    font-size: 30px;
     padding: 1.5em;
     min-width: 100%;
     display: flex;
@@ -20,6 +19,7 @@
     justify-items: center;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .goal > button {
