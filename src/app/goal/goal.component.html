@@ -2,7 +2,7 @@
     <hr>
     <ul class="goals">
       <div *ngFor='let goal of goals ; let i = index' class="goal">
-        <li appStrikethrough>{{goal.name}} due on {{ goal.commpleteDate | date | uppercase }} </li>
+        <li appStrikethrough>{{goal.name}} due  {{ goal.commpleteDate |  dateCount }} </li>
         <app-goaldetail 
           *ngIf="goal.showDescription" 
           [goal] = 'goal'
@@ -11,4 +11,4 @@
         <button (click)="toggleDetails(i)">Toggle Details </button>
       </div>
     </ul>
-<p *ngIf="goals.length > 5"> You have too many details </p>
+<p *ngIf="goals.length > 5"> You have too many Goals </p>
