@@ -1,8 +1,8 @@
     <h1>My Goals</h1>
     <hr>
     <ul class="goals">
-      <div *ngFor='let goal of goals ; let i = index' appStrikethrough class="goal">
-        <li>{{goal.name}}</li>
+      <div *ngFor='let goal of goals ; let i = index' class="goal">
+        <li appStrikethrough>{{goal.name}} due on {{ goal.commpleteDate | date | uppercase }} </li>
         <app-goaldetail 
           *ngIf="goal.showDescription" 
           [goal] = 'goal'
