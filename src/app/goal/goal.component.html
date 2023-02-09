@@ -6,7 +6,7 @@
         <app-goaldetail 
           *ngIf="goal.showDescription" 
           [goal] = 'goal'
-          (isComplete)= "completeGoal($event,i)"
+          (isComplete)= "deleteGoal($event,i)"
         ></app-goaldetail>
         <button (click)="toggleDetails(i)">Toggle Details </button>
       </div>
